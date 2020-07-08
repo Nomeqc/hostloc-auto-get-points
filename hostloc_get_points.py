@@ -3,9 +3,10 @@ from requests import Session as req_Session
 import time
 import random
 import re
-from tzlocal import get_localzone
+from dateutil.tz import tzlocal
 
-print(get_localzone())
+
+print(datetime.now(tzlocal()))
 
 # 随机生成用户空间链接
 def randomly_gen_uspace_url() -> list:
