@@ -6,7 +6,7 @@ import re
 from dateutil.tz import tzlocal
 
 
-print(datetime.now(tzlocal()))
+print(tzlocal())
 
 # 随机生成用户空间链接
 def randomly_gen_uspace_url() -> list:
